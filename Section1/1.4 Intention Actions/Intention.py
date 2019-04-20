@@ -1,17 +1,22 @@
+import math
+
+
 class Calculator:
-    def __init__(self):
-        pass
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-    def add(a, b):
-        return a + b
+    def add(self):
+        return self.a + self.b
 
-    def divide(a, b):
-        return a / b
+    def divide(self):
+        return self.a / self.b
 
-    # Todo: Add subtract option
+    def subtract(self):
+        return self.a - self.b
 
-    # def root(a):
-    #   return math.sqrt()
+    def root(a):
+        return math.sqrt()
 
 
 def greetings(name):
@@ -21,8 +26,6 @@ def greetings(name):
 def goodbye():
     print('Goodbye!')
 
-myCalculator = Calculator
-myCalculator.subtract()
 
-
-
+myCalculator = Calculator(15, 6)
+print(myCalculator.subtract())
